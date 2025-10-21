@@ -14,7 +14,8 @@ public class Main {
             System.out.println("2 - SUBTRACTION (-)");
             System.out.println("3 - MULTIPLICATION (x)");
             System.out.println("4 - DIVISION (/)");
-            System.out.println("5 - TOTAL OF OPERATIONS (=)");
+            System.out.println("5 - POWER OF X (**)");
+            System.out.println("6 - TOTAL OF OPERATIONS (=)");
             System.out.println("0 - EXIT");
             System.out.print("\nChoose the option: ");
             option = keyboard.nextInt();
@@ -48,6 +49,10 @@ public class Main {
                     }
                     break;
                 case 5:
+                    askNumbers();
+                    System.out.println("Result: " +Math.pow(a,b));
+                    break;
+                case 6:
                     System.out.println("Total of operations: "+totalOperations);
                     break;
                 case 0:
